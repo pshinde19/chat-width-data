@@ -1,0 +1,64 @@
+DATABASE TYPE: SQLite3
+DATABASE NAME: ecommerce.db
+
+IMPORTANT RULES:
+- Generate ONLY read-only SQL queries
+- Use ONLY the tables and columns listed below
+- Do NOT use INSERT, UPDATE, DELETE, DROP, ALTER
+- Prefer explicit column names
+- Use JOINs only when needed
+
+--------------------------------------------------
+TABLE: Customers
+--------------------------------------------------
+customer_id (INTEGER, PRIMARY KEY)
+full_name (TEXT)         -- Customer full name
+email (TEXT)             -- Unique email
+phone (TEXT)             -- Phone number
+city (TEXT)              -- City name
+state (TEXT)             -- State name
+created_at (TEXT)        -- Registration date (YYYY-MM-DD)
+
+--------------------------------------------------
+TABLE: Orders
+--------------------------------------------------
+order_id (INTEGER, PRIMARY KEY)
+customer_id (INTEGER, FK → Customers.customer_id)
+order_date (TEXT)        -- Order date (YYYY-MM-DD)
+order_time (TEXT)        -- Order time (HH:MM:SS)
+status (TEXT)            -- Placed | Shipped | Delivered | Cancelled
+payment_method (TEXT)    -- UPI | Card | Cash | Wallet
+order_channel (TEXT)     -- Online | Store
+total_quantity (INTEGER)
+total_amount (REAL)
+discount_amount (REAL)
+
+--------------------------------------------------
+TABLE: Inventory_Logs
+--------------------------------------------------
+log_id (INTEGER, PRIMARY KEY)
+product_name (TEXT)
+product_category (TEXT)  -- Grocery | Clothing | Electronics
+change_type (TEXT)       -- Restock | Sale | Damage
+quantity_changed (INTEGER)
+current_stock (INTEGER)
+log_date (TEXT)          -- YYYY-MM-DD
+related_order_id (INTEGER, nullable)
+
+--------------------------------------------------
+TABLE: Product_Reviews
+--------------------------------------------------
+review_id (INTEGER, PRIMARY KEY)
+customer_id (INTEGER, FK → Customers.customer_id)
+product_name (TEXT)
+rating (INTEGER)         -- 1 to 5
+review_text (TEXT)
+verified_purchase (INTEGER) -- 1 = yes, 0 = no
+sentiment_score (REAL)   -- Range approx -1 to +1
+review_date (TEXT)
+
+--------------------------------------------------
+RELATIONSHIPS:
+- Customers.customer_id → Orders.customer_id
+- Customers.customer_id → Product_Reviews.customer_id
+- Orders.order_id → Inventory_Logs.related_order_id

@@ -1,0 +1,76 @@
+{
+    "devteam":false,
+    "frequentlyasked":{"Customers":[
+                                ["None","How many customers are registered in total?"],
+                                ["None","List customers from Mumbai."],
+                                ["None","How many customers joined this year?"]
+                                ],
+                        "Inventory_Logs":[
+                             ["None","How many inventory logs exist?"],
+                             ["None","Show all damaged inventory records."],
+                             ["None","Total number of restocked items."]
+                        ], 
+                        "orders":[
+                            ["None","How many orders were placed in total?"],
+                            ["None","What is the total revenue generated?"],
+                            ["None","Show all cancelled orders."]
+                        ],
+                        "Product_Reviews":[
+                            ["None","How many product reviews are there?"],
+                            ["None","Average rating for each product."],
+                            ["None","List all reviews with rating less than 3."]
+                        ]
+                    },
+    "previouslyasked":{
+                        "Customers":[
+                                   ["None","Show customers grouped by state."],
+                                   ["None","Which city has the highest number of customers?"],
+                                   ["None","Find customers who placed more than 3 orders."]
+                                ],
+                        "Inventory_Logs":[
+                            ["None","Which product had the highest stock movement?"],
+                            ["None","Current stock level of each product."],
+                            ["None","List products with stock below 50 units."]
+                        ], 
+                        "orders":[
+                            ["None","How many orders were placed online vs in store?"],
+                            ["None","Total sales using UPI payments."],
+                            ["None","Average order value by payment method."]
+                        ],
+                        "Product_Reviews":[
+                            ["None","Which product has the highest average rating?"],
+                            ["None","How many verified purchase reviews exist?"],
+                            ["None","Show average rating by verified vs non-verified purchases."]
+                        ]
+                    },
+    "favourite":{"Customers":[
+                            ["1","List customers who have never placed an order."],
+                            ["2","Show customer count by month of registration."],
+                            ["3","Find customers with duplicate phone numbers."]
+                             ],
+                "Inventory_Logs":[
+                            ["4","How many items were sold last month?"],
+                            ["5","Inventory changes grouped by category."],
+                            ["6","Which products were damaged most frequently?"]
+                ], 
+                "orders":[
+                            ["7","Which day had the highest sales?"],
+                            ["8","List orders with discounts greater than ₹100."],
+                            ["9","How many orders were delivered successfully?"]
+                ],
+                "Product_Reviews":[
+                            ["10","Products with more than 10 reviews."],
+                            ["11","Reviews submitted in the last 30 days."],
+                            ["12","Compare sentiment score vs star rating."]
+                        ]
+            },
+    "metadata":{
+        "name":"pranay,shinde",
+        "email":"pshinde@gmail.com"
+    },
+    "tableslist":{"Customers":[], "inbound":["Product_Reviews","Inventory_Logs"], "orders":[]},
+    "welcomemsg":"",
+    "uiversion":"v1",
+    "status":"success",
+    "statuscode":200
+}

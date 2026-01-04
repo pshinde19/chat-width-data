@@ -1,0 +1,126 @@
+📊 1️⃣ Customers — 10 Askable Questions
+
+How many customers are registered in total?
+
+List customers from Mumbai.
+
+How many customers joined this year?
+
+Show customers grouped by state.
+
+Which city has the highest number of customers?
+
+Find customers who placed more than 3 orders.
+
+List customers who have never placed an order.
+
+Show customer count by month of registration.
+
+Find customers with duplicate phone numbers.
+
+Get top 5 customers based on total spending.
+
+
+
+🧾 2️⃣ Orders — 10 Askable Questions
+
+How many orders were placed in total?
+
+What is the total revenue generated?
+
+Show all cancelled orders.
+
+How many orders were placed online vs in store?
+
+Total sales using UPI payments.
+
+Average order value by payment method.
+
+Which day had the highest sales?
+
+List orders with discounts greater than ₹100.
+
+How many orders were delivered successfully?
+
+Monthly sales report for the last 3 months.
+
+
+📦 3️⃣ Inventory_Logs — 10 Askable Questions
+
+How many inventory logs exist?
+
+Show all damaged inventory records.
+
+Total number of restocked items.
+
+Which product had the highest stock movement?
+
+Current stock level of each product.
+
+List products with stock below 50 units.
+
+How many items were sold last month?
+
+Inventory changes grouped by category.
+
+Which products were damaged most frequently?
+
+Stock movement trend over time.
+
+
+⭐ 4️⃣ Product_Reviews — 10 Askable Questions
+
+How many product reviews are there?
+
+Average rating for each product.
+
+List all reviews with rating less than 3.
+
+Which product has the highest average rating?
+
+How many verified purchase reviews exist?
+
+Show average rating by verified vs non-verified purchases.
+
+Products with more than 10 reviews.
+
+Reviews submitted in the last 30 days.
+
+Compare sentiment score vs star rating.
+
+Products with negative sentiment score.
+
+
+🧠 Bonus: Cross-Table Questions (Very Important for GenAI)
+
+These are real-world GenAI test cases 👇
+
+Which customers gave low ratings but placed high-value orders?
+
+Products with high sales but low average ratings.
+
+Customers who ordered online and left verified reviews.
+
+Inventory sold vs inventory damaged per product.
+
+Revenue contribution by city.
+
+
+✅ Why This Matters for Your GenAI App
+
+These questions:
+
+Are natural
+
+Map cleanly to SQL
+
+Require joins, grouping, filtering
+
+Perfect for:
+
+Prompt testing
+
+Query accuracy evaluation
+
+Demo scenarios
+
