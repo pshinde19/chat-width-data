@@ -71,6 +71,5 @@
     "tableslist":{"Customers":[], "inbound":["Product_Reviews","Inventory_Logs"], "orders":[]},
     "welcomemsg":"",
     "uiversion":"v1",
-    "status":"success",
-    "statuscode":200
+    "status":"success"
 }
